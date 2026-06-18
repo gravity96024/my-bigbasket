@@ -1,14 +1,12 @@
 import { useState } from 'react';
 import { FaCheckCircle, FaCreditCard, FaQrcode, FaTruck } from 'react-icons/fa';
 import { useDispatch, useSelector } from 'react-redux';
-import { useLocation, useNavigate } from 'react-router-dom';
 import Navbar from '../../components/Navbar';
 import { clearCart } from '../../store/cartSlice';
 import '../../styles/Checkout.css';
 
 export default function Checkout() {
   const navigate = useNavigate();
-  const location = useLocation();
   const dispatch = useDispatch();
   const cartItems = useSelector(state => state.cart.items);
   
