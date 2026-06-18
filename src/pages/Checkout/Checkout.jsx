@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { FaCheckCircle, FaCreditCard, FaQrcode, FaTruck } from 'react-icons/fa';
 import { useDispatch, useSelector } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 import Navbar from '../../components/Navbar';
 import { clearCart } from '../../store/cartSlice';
 import '../../styles/Checkout.css';
